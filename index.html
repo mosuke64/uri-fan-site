@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ウリちゃん公式ファンコミュニティ | Instagramフォロワー1万人記念♡</title>
+  <meta name="description" content="祝・インスタフォロワー1万人！歩けないと言われた奇跡のスムースチワワ「ウリちゃん(8才)」とカアの温かい公式ファンコミュニティ。限定ギャラリーや歴史、グッズ、オフ会情報をお届けします。">
+  <meta name="keywords" content="ウリちゃん, スムースチワワ, チワワ, 犬, ファンコミュニティ, ファンクラブ, リハビリ, 奇跡, リンゴ">
+  
+  <!-- OGP (Open Graph Protocol) 設定 -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uri-smooth-chihuahua.fan/">
+  <meta property="og:title" content="ウリちゃん公式ファンコミュニティ | Instagramフォロワー1万人記念♡">
+  <meta property="og:description" content="祝・インスタフォロワー1万人突破！歩けないと言われた奇跡のスムースチワワ「ウリちゃん」とカアの温もりあふれるファンコミュニティLP。">
+  <meta property="og:image" content="images/uri-smooth-chihuahua.jpg">
+  <meta property="og:site_name" content="ウリちゃん公式ファンコミュニティ">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ウリちゃん公式ファンコミュニティ | Instagramフォロワー1万人記念♡">
+  <meta name="twitter:description" content="小さな体の大きな奇跡。今日もウリちゃんと、一歩ずつ。公式ファンコミュニティへようこそ！">
+  <meta name="twitter:image" content="images/uri-smooth-chihuahua.jpg">
+
+  <!-- Favicon & Touch Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+
+  <!-- Google Fonts: Zen Maru Gothic & Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700;800&family=Zen+Maru+Gothic:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ウリちゃん公式ファンコミュニティ",
+    "url": "https://uri-smooth-chihuahua.fan/",
+    "description": "Instagramフォロワー1万人記念！スムースチワワのウリちゃん公式ファンコミュニティLP",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ウリちゃんファミリー運営事務局"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 紙吹雪用 Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ==========================================================================
+       Header
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="site-logo" id="site-logo">
+        <div class="logo-paw"><i class="fas fa-paw"></i></div>
+        <div class="logo-text">
+          ウリちゃん
+          <span>Official Fan Club</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="メニューを開く" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">ファンクラブ紹介</a>
+        <a href="#profile" class="nav-link">プロフィール</a>
+        <a href="#story" class="nav-link">ウリちゃんの歩み</a>
+        <a href="#gallery" class="nav-link">ベストコレクション</a>
+        <a href="#goods" class="nav-link">人気グッズ</a>
+        <a href="#news" class="nav-link">お知らせ</a>
+        <a href="#activity" class="nav-link">活動実績</a>
+        <a href="#contact" class="nav-link">お問い合わせ</a>
+        <a href="#plans" class="nav-cta-btn" id="nav-join-btn">
+          <i class="fas fa-heart"></i> FC参加案内
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section (トップの位置に横いっぱいに置くウリちゃん画像 & 祝・1万人バナー)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- 横いっぱいのトップ画像コンテナ -->
+    <div class="hero-fullwidth-banner">
+      <img 
+        src="images/uri-smooth-chihuahua.jpg" 
+        alt="愛らしい茶色のスムースチワワのウリちゃん" 
+        class="hero-bg-img"
+        id="hero-img"
+      >
+      <div class="hero-gradient-overlay"></div>
+      
+      <div class="hero-banner-floating-badge">
+        <i class="fas fa-crown"></i>
+        <span>祝 ★ Instagramフォロワー10,000人達成！</span>
+      </div>
+    </div>
+
+    <!-- ヒーローメインコンテンツ（画像と自然に重なるカード） -->
+    <div class="container">
+      <div class="hero-content-box">
+        <div class="hero-milestone-pill">
+          <i class="fab fa-instagram"></i>
+          <span>Thank You! 10,000 Followers</span>
+        </div>
+
+        <h1 class="hero-title">
+          小さな体の、大きな奇跡。<br>
+          今日も<span class="highlight">ウリちゃん</span>と、一歩ずつ。
+        </h1>
+
+        <p class="hero-subtitle">
+          「一生歩けない」と言われた幼犬時代から、カアと一緒に紡いできた奇跡のストーリー。<br>
+          8才になった今も元気に笑顔を届けるウリちゃんの、愛と温もりにあふれた公式ファンコミュニティへようこそ♡
+        </p>
+
+        <div class="hero-actions">
+          <a href="#plans" class="btn-primary" id="hero-join-cta">
+            <i class="fas fa-heart"></i>
+            <span>ファンクラブに参加する</span>
+          </a>
+          <a href="#story" class="btn-secondary" id="hero-story-cta">
+            <i class="fas fa-book-open"></i>
+            <span>ウリちゃんの軌跡を読む</span>
+          </a>
+          <button class="btn-celebrate" id="celebrate-btn" title="お祝いクラッカーを鳴らす！">
+            🎉 お祝いクラッカーを鳴らす！
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Community Section (ファンクラブの紹介文 100字程度)
+       ========================================================================== -->
+  <section class="section-padding intro-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-home"></i> About Community</div>
+        <h2 class="section-title">ウリちゃんファンクラブのご紹介</h2>
+        <p class="section-subtitle">世界一愛おしいウリちゃんの毎日を、みんなで温かく見守る優しい場所です。</p>
+      </div>
+
+      <!-- 100字程度の紹介文カード -->
+      <div class="intro-summary-card">
+        <p class="intro-summary-text" id="intro-text">
+          ウリちゃんファミリーへようこそ！ここは、小さな奇跡を起こしたスムースチワワ『ウリちゃん』とカアの温かい毎日をみんなで見守り、応援し合うファンコミュニティです。限定写真や交流会など、ここだけの特別な幸せをお届けします。（108字）
+        </p>
+      </div>
+
+      <!-- コミュニティの3つの特徴 -->
+      <div class="intro-features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fas fa-camera-retro"></i></div>
+          <h3 class="feature-title">ここだけの限定コンテンツ</h3>
+          <p class="feature-desc">SNSでは見られない、お家で甘える無防備な寝顔やリンゴをもぐもぐ食べる未公開ショート動画を会員限定でお届けします。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fas fa-users"></i></div>
+          <h3 class="feature-title">あたたかなオフ会・お茶会</h3>
+          <p class="feature-desc">チワワ好き・ウリちゃんファンが集うのんびりとしたファンミーティングや、オンライン交流会へ優先でご案内いたします。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap"><i class="fas fa-gift"></i></div>
+          <h3 class="feature-title">会員限定オリジナル特典</h3>
+          <p class="feature-desc">デジタル会員証の発行をはじめ、毎年恒例の特製カレンダーや限定グッズの先行予約・シークレット購入権をご用意しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Profile Section (ウリちゃん プロフィール)
+       ========================================================================== -->
+  <section class="section-padding profile-section" id="profile">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-id-card"></i> Profile</div>
+        <h2 class="section-title">ウリちゃんのプロフィール</h2>
+        <p class="section-subtitle">大きな瞳と優しいピンクの鼻がチャームポイントの女の子です。</p>
+      </div>
+
+      <div class="profile-card-wrapper">
+        <div class="profile-img-col">
+          <img 
+            src="images/uri-smooth-chihuahua.jpg" 
+            alt="ウリちゃんの愛らしいポートレート" 
+            class="profile-dog-img"
+          >
+          <div class="profile-tag-badge">
+            <i class="fas fa-sparkles"></i> 奇跡のちいさな天使
+          </div>
+        </div>
+
+        <div class="profile-info-col">
+          <div class="profile-name-area">
+            <span class="profile-name-en">Smooth Chihuahua "URI"</span>
+            <div class="profile-name-jp">
+              ウリちゃん 
+              <span class="profile-gender-badge">女の子 ♀</span>
+            </div>
+          </div>
+
+          <div class="profile-data-list">
+            <div class="profile-data-item">
+              <div class="profile-data-label">犬種</div>
+              <div class="profile-data-val">スムースチワワ</div>
+            </div>
+            <div class="profile-data-item">
+              <div class="profile-data-label">年齢 / お誕生日</div>
+              <div class="profile-data-val">8才（2018年生まれ）</div>
+            </div>
+            <div class="profile-data-item">
+              <div class="profile-data-label">大好物</div>
+              <div class="profile-data-val">🍎 サクサクの甘いリンゴ！</div>
+            </div>
+            <div class="profile-data-item">
+              <div class="profile-data-label">性格</div>
+              <div class="profile-data-val">がんばりやさん・甘えん坊</div>
+            </div>
+          </div>
+
+          <div class="profile-quote">
+            <i class="fas fa-quote-left" style="color: var(--color-primary); margin-right: 6px;"></i>
+            幼い頃の後脚のハンデを乗り越え、今日も小さな体で元気いっぱいてくてく歩きます。リンゴの皮をむく音が聞こえると、どこにいてもトコトコ駆け寄ってきます♡
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       History & Story Section (誕生から現在までの歴史)
+       ========================================================================== -->
+  <section class="section-padding story-section" id="story">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-heart"></i> Miracle Journey</div>
+        <h2 class="section-title">ウリちゃんとカアのものがたり</h2>
+        <p class="section-subtitle">
+          「この子は歩けるようにはならない」と言われたあの日から。愛とリハビリで紡いだ奇跡の足あとです。
+        </p>
+      </div>
+
+      <div class="story-timeline">
+        <!-- Story 1 -->
+        <div class="story-item">
+          <div class="story-node"><i class="fas fa-paw"></i></div>
+          <div class="story-card">
+            <span class="story-year">2018年（幼犬期）</span>
+            <h3 class="story-card-title">
+              <i class="fas fa-hospital" style="color: var(--color-primary);"></i>
+              突然の宣告と、小さな命との出会い
+            </h3>
+            <p class="story-card-text">
+              生まれたばかりのウリちゃん。ある日受診した獣医師から「この子は一生、自分の足で歩けるようにはならないでしょう」と告げられました。小さな体を震わせる姿を見て、カア（お母さん）は「絶対にこの子と歩いてみせる」と心に誓いました。
+            </p>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-item">
+          <div class="story-node"><i class="fas fa-hands-holding"></i></div>
+          <div class="story-card">
+            <span class="story-year">2018 - 2020年</span>
+            <h3 class="story-card-title">
+              <i class="fas fa-dumbbell" style="color: var(--color-primary);"></i>
+              ハンデを抱えるカアと二人三脚の必死のリハビリ
+            </h3>
+            <p class="story-card-text">
+              飼い主のカア自身も身体にハンデを抱えていました。「同じハンデを持つ者同士、痛みや辛さを分かり合えるはず」。毎日マッサージを繰り返し、タオルで体を支えながら一歩ずつ一歩ずつ、涙を拭いながら二人で必死のリハビリを続けました。
+            </p>
+            <div class="story-highlight-badge">
+              <i class="fas fa-sparkles"></i> 奇跡の瞬間：自分の四本の足で立ち上がり、最初の一歩を踏み出しました！
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="story-item">
+          <div class="story-node"><i class="fas fa-apple-whole"></i></div>
+          <div class="story-card">
+            <span class="story-year">2021 - 2024年</span>
+            <h3 class="story-card-title">
+              <i class="fas fa-smile-beam" style="color: var(--color-apple-red);"></i>
+              大好物「リンゴ」との出会いと広がる笑顔の輪
+            </h3>
+            <p class="story-card-text">
+              リハビリをがんばったウリちゃんへのとっておきのご褒美、それが「リンゴ」でした。サクサク嬉しそうに食べる姿がSNSで大反響を呼び、同じようにハンデと向き合う人々や犬好きの方々へ、大きな希望と笑顔を届けるようになりました。
+            </p>
+          </div>
+        </div>
+
+        <!-- Story 4 -->
+        <div class="story-item">
+          <div class="story-node"><i class="fas fa-star"></i></div>
+          <div class="story-card">
+            <span class="story-year">現在（8才）</span>
+            <h3 class="story-card-title">
+              <i class="fas fa-award" style="color: #ffb703;"></i>
+              8才になった今。足のハンデを抱えながらも元気に暮らす
+            </h3>
+            <p class="story-card-text">
+              8才を迎えた今も後脚に少しハンデは抱えていますが、カアの愛情をいっぱいに受けて毎日元気に暮らしています。そして2026年、Instagramフォロワーは1万人を突破！これからも皆さんと一緒に、あたたかい時間を紡いでいきます。
+            </p>
+            <div class="story-highlight-badge" style="background: #fff9e6; border-color: #ffe699; color: #b56c00;">
+              <i class="fas fa-crown"></i> 10,000人のお友達に囲まれ、今日も幸せにてくてく歩いています♡
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Best Collection Section (写真＆動画ギャラリー)
+       ========================================================================== -->
+  <section class="section-padding gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-images"></i> Best Collection</div>
+        <h2 class="section-title">ウリちゃんのベストコレクション</h2>
+        <p class="section-subtitle">心ときめくウリちゃんの日常フォト＆動画をたっぷり集めました。</p>
+      </div>
+
+      <!-- フィルタータブ -->
+      <div class="gallery-filter-tabs">
+        <button class="filter-btn active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="daily">日常のかわいい姿</button>
+        <button class="filter-btn" data-filter="apple">大好物リンゴ🍎</button>
+        <button class="filter-btn" data-filter="walk">てくてくお散歩</button>
+        <button class="filter-btn" data-filter="video">動画コレクション🎥</button>
+      </div>
+
+      <!-- ギャラリーアイテム一覧 -->
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Item 1: 写真 -->
+        <div class="gallery-card" data-category="daily">
+          <div class="gallery-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80" 
+              alt="日だまりで首をかしげるウリちゃん" 
+              class="gallery-thumb-img"
+            >
+            <div class="gallery-type-badge"><i class="fas fa-camera"></i> 写真</div>
+          </div>
+          <div class="gallery-caption">
+            <h4 class="gallery-caption-title">日だまりの首かしげ</h4>
+            <p class="gallery-caption-desc">「カア、なにしてるの？」とお話しを聞いてくれる優しい表情。</p>
+          </div>
+        </div>
+
+        <!-- Item 2: 写真 -->
+        <div class="gallery-card" data-category="apple">
+          <div class="gallery-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=800&q=80" 
+              alt="大好きなリンゴに目を輝かせるウリちゃん" 
+              class="gallery-thumb-img"
+            >
+            <div class="gallery-type-badge"><i class="fas fa-apple-whole"></i> リンゴ</div>
+          </div>
+          <div class="gallery-caption">
+            <h4 class="gallery-caption-title">リンゴを見つめる真剣な瞳</h4>
+            <p class="gallery-caption-desc">シャキシャキのリンゴが大好物！ひとくちもらう瞬間の至福顔。</p>
+          </div>
+        </div>
+
+        <!-- Item 3: 動画モック -->
+        <div class="gallery-card" data-category="video">
+          <div class="gallery-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" 
+              alt="芝生を一生懸命走るウリちゃんの動画プレビュー" 
+              class="gallery-thumb-img"
+            >
+            <div class="gallery-type-badge" style="background: rgba(230, 57, 70, 0.85);"><i class="fas fa-play"></i> 動画</div>
+            <div class="gallery-play-icon"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <h4 class="gallery-caption-title">【動画】芝生をてくてく大冒険！</h4>
+            <p class="gallery-caption-desc">公園のやわらかい草の上を一生懸命走る感動のショートムービー。</p>
+          </div>
+        </div>
+
+        <!-- Item 4: 写真 -->
+        <div class="gallery-card" data-category="walk">
+          <div class="gallery-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" 
+              alt="お気に入りのお洋服でお散歩するウリちゃん" 
+              class="gallery-thumb-img"
+            >
+            <div class="gallery-type-badge"><i class="fas fa-shoe-prints"></i> お散歩</div>
+          </div>
+          <div class="gallery-caption">
+            <h4 class="gallery-caption-title">桜並木とお気に入りワンピ</h4>
+            <p class="gallery-caption-desc">ピンクのお洋服を着て、春の心地よい風を浴びながら深呼吸。</p>
+          </div>
+        </div>
+
+        <!-- Item 5: 写真 -->
+        <div class="gallery-card" data-category="daily">
+          <div class="gallery-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80" 
+              alt="毛布にくるまってスヤスヤ眠るウリちゃん" 
+              class="gallery-thumb-img"
+            >
+            <div class="gallery-type-badge"><i class="fas fa-bed"></i> おやすみ</div>
+          </div>
+          <div class="gallery-caption">
+            <h4 class="gallery-caption-title">天使のスヤスヤタイム</h4>
+            <p class="gallery-caption-desc">リハビリをがんばった後は、カアのひざの上で安心してお昼寝。</p>
+          </div>
+        </div>
+
+        <!-- Item 6: 動画モック -->
+        <div class="gallery-card" data-category="video">
+          <div class="gallery-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=800&q=80" 
+              alt="リンゴをもぐもぐ食べる咀嚼音ショート動画" 
+              class="gallery-thumb-img"
+            >
+            <div class="gallery-type-badge" style="background: rgba(230, 57, 70, 0.85);"><i class="fas fa-play"></i> 動画</div>
+            <div class="gallery-play-icon"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <h4 class="gallery-caption-title">【動画】いい音♪ リンゴもぐもぐASMR</h4>
+            <p class="gallery-caption-desc">「サクサクッ」といい音を立てて美味しそうに食べる癒やしのASMR。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Official Goods Section (人気販売グッズ)
+       ========================================================================== -->
+  <section class="section-padding goods-section" id="goods">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-store"></i> Official Goods</div>
+        <h2 class="section-title">ウリちゃんの人気販売グッズ</h2>
+        <p class="section-subtitle">収益の一部は、ハンデを抱える保護犬たちの医療・支援活動へ寄付されます。</p>
+      </div>
+
+      <div class="goods-grid">
+        <!-- Goods 1 -->
+        <div class="goods-card">
+          <div class="goods-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" 
+              alt="1万人記念 プレミアムお散歩トートバッグ" 
+              class="goods-thumb-img"
+            >
+            <span class="goods-badge anniversary">1万人記念限定</span>
+          </div>
+          <div class="goods-info">
+            <span class="goods-category">BAG / FASHION</span>
+            <h3 class="goods-name">1万人記念 プレミアムお散歩トート</h3>
+            <div class="goods-price">¥2,800 <span>(税込)</span></div>
+            <p class="goods-desc">
+              ウリちゃんの可愛い足あと刺繍入り。マナーボトルやリンゴおやつが入る便利なポケット付き♪
+            </p>
+            <a href="#contact" class="goods-btn">詳細・お求めはこちら</a>
+          </div>
+        </div>
+
+        <!-- Goods 2 -->
+        <div class="goods-card">
+          <div class="goods-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" 
+              alt="ウリちゃん＆リンゴのアクリルスタンド" 
+              class="goods-thumb-img"
+            >
+            <span class="goods-badge">人気No.1</span>
+          </div>
+          <div class="goods-info">
+            <span class="goods-category">ACRYLIC STAND</span>
+            <h3 class="goods-name">ウリちゃん×リンゴ アクスタキーホルダー</h3>
+            <div class="goods-price">¥1,500 <span>(税込)</span></div>
+            <p class="goods-desc">
+              デスクに飾っても、バッグに付けて一緒にお出かけしても可愛いウリちゃんのダイカットアクスタです。
+            </p>
+            <a href="#contact" class="goods-btn">詳細・お求めはこちら</a>
+          </div>
+        </div>
+
+        <!-- Goods 3 -->
+        <div class="goods-card">
+          <div class="goods-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=600&q=80" 
+              alt="2026年 卓上ほっこりカレンダー" 
+              class="goods-thumb-img"
+            >
+            <span class="goods-badge">季節限定</span>
+          </div>
+          <div class="goods-info">
+            <span class="goods-category">STATIONERY</span>
+            <h3 class="goods-name">2026年 卓上ウリちゃんほっこりカレンダー</h3>
+            <div class="goods-price">¥1,980 <span>(税込)</span></div>
+            <p class="goods-desc">
+              四季折々のウリちゃんの撮り下ろし写真が12ヶ月分詰まった、毎月めくるのが楽しみな卓上カレンダー。
+            </p>
+            <a href="#contact" class="goods-btn">詳細・お求めはこちら</a>
+          </div>
+        </div>
+
+        <!-- Goods 4 -->
+        <div class="goods-card">
+          <div class="goods-thumb-wrap">
+            <img 
+              src="images/goods-towel.jpg" 
+              alt="今治産 ふわふわ刺繍ハンドタオル" 
+              class="goods-thumb-img"
+            >
+            <span class="goods-badge" style="background: #2a9d8f;">ロングセラー</span>
+          </div>
+          <div class="goods-info">
+            <span class="goods-category">TOWEL / DAILY</span>
+            <h3 class="goods-name">今治産 ふわふわ刺繍ハンドタオル</h3>
+            <div class="goods-price">¥1,200 <span>(税込)</span></div>
+            <p class="goods-desc">
+              肌触り抜群の今治タオルに、ウリちゃんのワンポイント刺繍とサクラピンクの縁取りを施しました。
+            </p>
+            <a href="#contact" class="goods-btn">詳細・お求めはこちら</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="goods-cta-wrap">
+        <a href="#contact" class="btn-primary">
+          <i class="fas fa-shopping-bag"></i>
+          <span>公式オンラインショップを開く</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       News & Notice Section (運営者からのお知らせ欄)
+       ========================================================================== -->
+  <section class="section-padding news-section" id="news">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-bell"></i> News & Notice</div>
+        <h2 class="section-title">運営からのお知らせ</h2>
+        <p class="section-subtitle">イベント、グッズ、メディア掲載などの最新情報をお届けします。</p>
+      </div>
+
+      <div class="news-list-wrap">
+        <a href="#contact" class="news-item">
+          <div class="news-date">2026.10.25</div>
+          <span class="news-badge event">イベント</span>
+          <div class="news-title">【祝・1万人】ファン感謝オフ会＆ウリちゃんお祝い会の開催が決定しました！</div>
+          <div class="news-arrow"><i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <a href="#contact" class="news-item">
+          <div class="news-date">2026.10.15</div>
+          <span class="news-badge goods">グッズ</span>
+          <div class="news-title">「1万人記念 プレミアムお散歩トートバッグ」先行予約受付を開始しました。</div>
+          <div class="news-arrow"><i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <a href="#contact" class="news-item">
+          <div class="news-date">2026.10.01</div>
+          <span class="news-badge notice">お知らせ</span>
+          <div class="news-title">秋のリンゴ狩りレポート＆ウリちゃんもぐもぐ限定フォトギャラリーを公開！</div>
+          <div class="news-arrow"><i class="fas fa-chevron-right"></i></div>
+        </a>
+
+        <a href="#contact" class="news-item">
+          <div class="news-date">2026.09.20</div>
+          <span class="news-badge event">チャリティ</span>
+          <div class="news-title">ハンデ犬応援チャリティバザーの寄付金受領のご報告とお礼。</div>
+          <div class="news-arrow"><i class="fas fa-chevron-right"></i></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Activities Section (活動実績: オフ会、グッズ販売会など)
+       ========================================================================== -->
+  <section class="section-padding activity-section" id="activity">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-calendar-check"></i> Activities</div>
+        <h2 class="section-title">これまでの活動実績</h2>
+        <p class="section-subtitle">ウリちゃんファミリーとファンの皆さんが一緒に笑顔になった大切な思い出です。</p>
+      </div>
+
+      <div class="activity-grid">
+        <div class="activity-card">
+          <div class="activity-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" 
+              alt="秋のドッグランファンミーティング" 
+              class="activity-img"
+            >
+          </div>
+          <div class="activity-content">
+            <div class="activity-date">2025年11月 開催</div>
+            <h3 class="activity-title">第2回 ウリちゃんオフ会 in 代々木公園</h3>
+            <p class="activity-desc">
+              全国から35頭のチワワちゃんと飼い主様にご参加いただき、のんびりピクニックやウリちゃんのてくてく応援会を開催しました。
+            </p>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" 
+              alt="チャリティバザー＆オリジナルグッズお渡し会" 
+              class="activity-img"
+            >
+          </div>
+          <div class="activity-content">
+            <div class="activity-date">2026年3月 開催</div>
+            <h3 class="activity-title">ハンデ犬チャリティバザー＆グッズ販売会</h3>
+            <p class="activity-desc">
+              手作りグッズやオリジナル記念品を販売。売上の一部で車椅子やリハビリ器具を保護団体様へ寄付いたしました。
+            </p>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=800&q=80" 
+              alt="ウリちゃん8才誕生祭オンラインLIVE" 
+              class="activity-img"
+            >
+          </div>
+          <div class="activity-content">
+            <div class="activity-date">2026年6月 開催</div>
+            <h3 class="activity-title">ウリちゃん8才誕生祭 オンライン生配信</h3>
+            <p class="activity-desc">
+              特製リンゴケーキでお祝い！同時接続800名以上のファンと温かいコメントに包まれた感動の生配信イベントとなりました。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Membership Plans Section (推奨項目: ファンクラブ参加案内)
+       ========================================================================== -->
+  <section class="section-padding plan-section" id="plans">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-crown"></i> Membership Plans</div>
+        <h2 class="section-title">ファンコミュニティ参加プラン</h2>
+        <p class="section-subtitle">あなたに合ったスタイルで、ウリちゃんの毎日を一緒に応援しませんか？</p>
+      </div>
+
+      <div class="plan-grid">
+        <!-- Plan 1: Free -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3 class="plan-name">無料メルマガメンバー</h3>
+            <div class="plan-price">¥0 <span>/ 永久無料</span></div>
+          </div>
+          <ul class="plan-features-list">
+            <li class="plan-feature-item"><i class="fas fa-check-circle"></i> 月1回のウリちゃん月刊ニュースレター</li>
+            <li class="plan-feature-item"><i class="fas fa-check-circle"></i> 最新イベント・オフ会の一般案内</li>
+            <li class="plan-feature-item"><i class="fas fa-check-circle"></i> 公式オンラインショップでのお買い物</li>
+          </ul>
+          <a href="#contact" class="btn-secondary" style="width: 100%; justify-content: center;">
+            無料で登録する
+          </a>
+        </div>
+
+        <!-- Plan 2: Premium (Featured) -->
+        <div class="plan-card featured">
+          <div class="plan-header">
+            <h3 class="plan-name">ウリちゃんプレミアムサポーター</h3>
+            <div class="plan-price">¥500 <span>/ 月 (税込)</span></div>
+          </div>
+          <ul class="plan-features-list">
+            <li class="plan-feature-item"><i class="fas fa-heart"></i> 会員証（デジタル肉球シリアル番号付き）</li>
+            <li class="plan-feature-item"><i class="fas fa-heart"></i> 週1回の未公開もぐもぐ動画・日常アルバム</li>
+            <li class="plan-feature-item"><i class="fas fa-heart"></i> オフ会・限定生配信への最優先ご招待</li>
+            <li class="plan-feature-item"><i class="fas fa-heart"></i> 年末特製カレンダーのプレゼント</li>
+            <li class="plan-feature-item"><i class="fas fa-heart"></i> 会費の一部はハンデ犬支援チャリティに充当</li>
+          </ul>
+          <a href="#contact" class="btn-primary" style="width: 100%; justify-content: center;">
+            サポーターに参加する
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Form Section (お問い合わせフォーム)
+       ========================================================================== -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-envelope"></i> Contact Us</div>
+        <h2 class="section-title">お問い合わせフォーム</h2>
+        <p class="section-subtitle">
+          ファンクラブについてのご質問、グッズ、イベント、取材のご相談などお気軽にお寄せください。
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="user-name" class="form-label">
+              お名前 <span class="required-badge">必須</span>
+            </label>
+            <input type="text" id="user-name" class="form-control" placeholder="例：山田 花子" required>
+          </div>
+
+          <div class="form-group">
+            <label for="user-email" class="form-label">
+              メールアドレス <span class="required-badge">必須</span>
+            </label>
+            <input type="email" id="user-email" class="form-control" placeholder="例：uri.fan@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-type" class="form-label">お問い合わせ種別</label>
+            <select id="contact-type" class="form-control">
+              <option value="fanclub">ファンクラブへのご参加・ご質問</option>
+              <option value="goods">販売グッズについて</option>
+              <option value="event">オフ会・イベントについて</option>
+              <option value="media">メディア取材・お仕事のご依頼</option>
+              <option value="other">その他・応援メッセージ</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="user-message" class="form-label">
+              メッセージ内容 <span class="required-badge">必須</span>
+            </label>
+            <textarea id="user-message" class="form-control" placeholder="ご質問やウリちゃんへの温かいメッセージをご自由にご記入ください。" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn" id="contact-submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            <span>メッセージを送信する</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SNS Links Section (インスタ・X・Threads・LINE)
+       ========================================================================== -->
+  <section class="section-padding sns-section" id="sns">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fas fa-hashtag"></i> Official Social Media</div>
+        <h2 class="section-title">ウリちゃん公式SNS</h2>
+        <p class="section-subtitle">日々の可愛い姿やショート動画を毎日更新中！ぜひフォローしてね♡</p>
+      </div>
+
+      <div class="sns-cards-grid">
+        <!-- Instagram -->
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="sns-card" id="sns-instagram">
+          <div class="sns-icon-circle instagram"><i class="fab fa-instagram"></i></div>
+          <div class="sns-card-name">Instagram</div>
+          <div class="sns-card-handle">@uri_chihuahua_8</div>
+          <div class="sns-card-stat">祝・10,000 フォロワー突破！</div>
+        </a>
+
+        <!-- X (Twitter) -->
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="sns-card" id="sns-x">
+          <div class="sns-icon-circle x-twitter"><i class="fab fa-x-twitter"></i></div>
+          <div class="sns-card-name">X (旧Twitter)</div>
+          <div class="sns-card-handle">@uri_chihuahua</div>
+          <div class="sns-card-stat">最新情報＆つぶやき</div>
+        </a>
+
+        <!-- Threads -->
+        <a href="https://threads.net" target="_blank" rel="noopener noreferrer" class="sns-card" id="sns-threads">
+          <div class="sns-icon-circle threads"><i class="fab fa-threads"></i></div>
+          <div class="sns-card-name">Threads</div>
+          <div class="sns-card-handle">@uri_chihuahua_8</div>
+          <div class="sns-card-stat">カアのゆる日記</div>
+        </a>
+
+        <!-- LINE Official -->
+        <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="sns-card" id="sns-line">
+          <div class="sns-icon-circle line"><i class="fab fa-line"></i></div>
+          <div class="sns-card-name">公式LINE</div>
+          <div class="sns-card-handle">@uri_fanclub</div>
+          <div class="sns-card-stat">限定お友だち登録</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <div class="logo-paw"><i class="fas fa-paw"></i></div>
+          <span>ウリちゃん公式ファンコミュニティ</span>
+        </div>
+        <div class="footer-links">
+          <a href="#about" class="footer-link">ファンクラブ紹介</a>
+          <a href="#story" class="footer-link">歩み</a>
+          <a href="#gallery" class="footer-link">ギャラリー</a>
+          <a href="#goods" class="footer-link">グッズ</a>
+          <a href="#contact" class="footer-link">お問い合わせ</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>&copy; 2026 URI The Smooth Chihuahua Fan Club. All Rights Reserved.</div>
+        <div>Made with love for Uri & Kaa 🍎🐾</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Modals
+       ========================================================================== -->
+  <!-- Lightbox Modal -->
+  <div class="modal-overlay" id="lightbox-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="lightbox-close" aria-label="閉じる">&times;</button>
+      <img src="" alt="" id="lightbox-img" style="width: 100%; border-radius: var(--radius-lg) var(--radius-lg) 0 0; max-height: 70vh; object-fit: contain; background: #000;">
+      <div style="padding: 24px;">
+        <h3 id="lightbox-title" style="font-size: 1.3rem; margin-bottom: 8px; color: var(--color-text-main);"></h3>
+        <p id="lightbox-desc" style="font-size: 0.95rem; color: var(--color-text-sub); line-height: 1.7;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-container" style="max-width: 520px; text-align: center; padding: 48px 32px;">
+      <button class="modal-close-btn" id="success-modal-close" aria-label="閉じる">&times;</button>
+      <div style="font-size: 3.5rem; color: var(--color-primary); margin-bottom: 16px;">
+        <i class="fas fa-heart"></i>
+      </div>
+      <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 12px; color: var(--color-text-main);">
+        お問い合わせありがとうございます！
+      </h3>
+      <p style="font-size: 0.95rem; color: var(--color-text-sub); line-height: 1.8; margin-bottom: 28px;">
+        メッセージを受け付けました。<br>
+        運営事務局より、折り返しメールにてご連絡させていただきます。<br>
+        これからもウリちゃんを温かく見守っていただけると嬉しいです🍎🐾
+      </p>
+      <button class="btn-primary" onclick="document.getElementById('success-modal').classList.remove('active'); document.body.style.overflow='';" style="margin: 0 auto;">
+        閉じる
+      </button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="トップに戻る">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
